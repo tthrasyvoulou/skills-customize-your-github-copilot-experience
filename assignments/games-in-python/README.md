@@ -1,19 +1,44 @@
+ # 📘 Assignment: Hangman Game Challenge
 
-# 🎮 Hangman Game Challenge
+ ## 🎯 Objective
 
-Build the classic word-guessing game using Python strings, loops, and user input.
+ Build a command-line Hangman game in Python that exercises string manipulation, loops, conditionals, and random selection. Students will implement a playable game loop that accepts guesses and enforces a limit on incorrect attempts.
 
-## � What You'll Build
+ ## 📝 Tasks
 
-Create a Hangman game where players guess letters to reveal a hidden word before running out of attempts.
+ ### 🛠️	Implement Hangman Game
 
-**Skills practiced:** String manipulation, loops, conditionals, random selection
+ #### Description
+ Create a Python program that:
 
-## ✅ Must Have's
+ - Randomly chooses a secret word from a predefined list.
+ - Displays the secret word progress using underscores for unknown letters (for example: `_ _ a _ _`).
+ - Accepts single-letter guesses from the player and updates the display accordingly.
+ - Tracks incorrect guesses and remaining attempts.
+ - Ends the game when the word is fully guessed or when attempts are exhausted, showing a win or lose message.
 
-Your game must:
-- Randomly select words from a predefined list
-- Accept letter guesses and show current progress (_ _ _ format)
-- Track incorrect guesses remaining
-- End when word is guessed or attempts exhausted
-- Display win/lose messages
+ #### Requirements
+ Completed program should:
+
+ - Randomly select words from a predefined list.
+ - Accept letter guesses and show current progress (e.g., `_ _ a _ _`).
+ - Keep track of letters already guessed (both correct and incorrect).
+ - Subtract from a fixed number of allowed incorrect attempts for wrong guesses.
+ - End with a clear win or lose message; on loss, reveal the secret word.
+ - Be runnable from the command line (for example: `python3 hangman.py`).
+
+ #### Example
+ A short example interaction:
+
+ ```
+ Welcome to Hangman!
+ Word: _ _ _ _ _
+ Guesses remaining: 6
+ Guess a letter: a
+ Good guess! Word: _ a _ _ _
+ Guesses remaining: 6
+ Guess a letter: z
+ Wrong. Guesses remaining: 5
+ ...
+ You win! The word was: magic
+ ```
