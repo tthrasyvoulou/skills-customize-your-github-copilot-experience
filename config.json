@@ -77,6 +77,25 @@
           "type": "txt"
         }
       ]
+    },
+    {
+      "id": "fastapi-persistent-crud",
+      "title": "Persistent CRUD API with SQLite",
+      "description": "Build a FastAPI app with SQLite-backed CRUD endpoints and input validation.",
+      "path": "assignments/fastapi-persistent-crud",
+      "dueDate": "2026-06-04",
+      "attachments": [
+        {
+          "name": "Starter Code",
+          "file": "starter-code.py",
+          "type": "python"
+        },
+        {
+          "name": "Requirements",
+          "file": "requirements.txt",
+          "type": "txt"
+        }
+      ]
     }
   ]
 }
